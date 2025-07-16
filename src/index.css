@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+@layer base {
+  :root {
+    --mainBrandColor: #ff7f00;
+    --secondaryBrandColor: #A7449F;
+    --superNova: #ffcc00;
+    --light-color: #f0f3f2;
+    --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+    --rating-color: #ffc908;
+  }
+
+  body {
+    background-image: url(../src/assets/images/light-patten.svg);
+    font-family: 'Encode Sans Expanded', sans-serif;
+  }
+
+  a {
+    @apply no-underline text-inherit transition-colors;
+
+    /* &:hover {
+      @apply text-[var(--mainBrandColor)];
+    } */
+  }
+}
+
+@layer components {
+  .rating-color {
+    @apply text-[var(--rating-color)];
+  }
+
+  .product {
+    @apply shadow-[var(--shadow)];
+
+    .btn {
+      @apply transition-all duration-1000 translate-y-full opacity-0;
+    }
+
+    &:hover .btn {
+      @apply opacity-100 translate-y-0;
+    }
+  }
+
+  .text-main {
+    @apply text-[var(--mainBrandColor)];
+  }
+
+  .text-secondary {
+    @apply text-[var(--secondaryBrandColor)];
+  }
+
+  .text-superNova {
+    @apply text-[var(--superNova)];
+  }
+
+  .text-main-light {
+    @apply text-[var(--light-color)];
+  }
+
+  .bg-main {
+    @apply bg-[var(--mainBrandColor)];
+  }
+
+  .bg-secondary {
+    @apply bg-[var(--secondaryBrandColor)];
+  }
+
+  .bg-superNova {
+    @apply bg-[var(--superNova)];
+  }
+
+  .bg-main-light {
+    @apply bg-[var(--light-color)];
+  }
+}
+
+@layer utilities {
+  .font-sm {
+    @apply text-sm;
+  }
+/* 
+  .active {
+    @apply text-[var(--mainBrandColor)];
+  } */
+
+  h1 {
+    @apply text-5xl leading-tight;
+  }
+
+  h2 {
+    @apply text-4xl leading-tight;
+  }
+}
+
+/* 
+button {
+  @apply px-3 py-1.5 my-2 rounded-lg text-white bg-orange-500 hover:bg-orange-600 focus:ring-2 focus:ring-orange-700;
+} */
+
+/* background-color: #F26B0F; #F97316; #F29F05;  #ff7100; #9019b2; #A7449F; #ec63c8; #97278e; #7A2C76; bg-[#001E2B] hover:bg-[#374151] لون كحلى  [rgb(255,223,93)]*/
