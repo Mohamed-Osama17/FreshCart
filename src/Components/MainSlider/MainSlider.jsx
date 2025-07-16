@@ -5,7 +5,7 @@ import mainslide1 from '../../assets/images/slider-image-1.jpeg';
 import mainslide2 from '../../assets/images/slider-image-2.jpeg';
 import mainslide3 from '../../assets/images/slider-image-3.jpeg';
 import banner1 from '../../assets/images/grocery-banner.png';
-import banner2 from '../../assets/images/grocery-banner-2.JPEG';
+import banner2 from '../../assets/images/grocery-banner-2.jpeg';
 import { Link } from 'react-router-dom';
 import { DarkModeContext } from '../../Context/DarkModeContext';
 
